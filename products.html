@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONEMARK - Our Products</title>
+<meta name="description" content="9 product lines | Custom sizes and features available">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif; color: #1a1a2e; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; }
+header { background: #0f0c29; padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { color: #fff; font-size: 22px; font-weight: 800; }
+.logo span { color: #00d4ff; }
+nav a { color: rgba(255,255,255,0.8); margin-left: 28px; font-size: 14px; }
+nav a:hover { color: #00d4ff; }
+.lang-switch { margin-left: 20px; }
+.lang-switch select { background: #1a1a2e; color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; border-radius: 6px; font-size: 13px; }
+.section { padding: 50px 40px; max-width: 1100px; margin: 0 auto; }
+.section-title { font-size: 30px; font-weight: 700; text-align: center; }
+.section-bar { width: 50px; height: 3px; background: #0095ff; margin: 12px auto 30px; }
+.section-sub { text-align: center; color: #666; margin-bottom: 35px; font-size: 14px; }
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.product-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.product-card img { width: 100%; height: 200px; object-fit: contain; background: #fafafa; }
+.product-info { padding: 16px; }
+.product-info h3 { font-size: 16px; font-weight: 600; }
+.product-info p { font-size: 12px; color: #666; margin-top: 6px; line-height: 1.6; height: 48px; overflow: hidden; }
+.product-info .sizes { font-size: 11px; color: #0095ff; margin-top: 6px; font-weight: 600; }
+.product-info .more { display: inline-block; margin-top: 10px; font-size: 12px; color: #0095ff; font-weight: 600; }
+.detail-hero { background: linear-gradient(135deg, #0f0c29, #302b63); color: #fff; padding: 40px; text-align: center; }
+.detail-hero h1 { font-size: 30px; }
+.detail-hero .sizes { color: #00d4ff; margin-top: 8px; font-size: 14px; }
+.detail-body { max-width: 1000px; margin: 0 auto; padding: 40px; display: flex; gap: 40px; }
+.detail-img { flex: 1; }
+.detail-img img { width: 100%; border-radius: 10px; border: 1px solid #eee; }
+.detail-info { flex: 1; }
+.detail-info p { font-size: 14px; line-height: 1.9; color: #444; }
+.spec-table { margin-top: 20px; width: 100%; border-collapse: collapse; font-size: 13px; }
+.spec-table td { padding: 10px; border-bottom: 1px solid #eee; }
+.spec-table td:first-child { font-weight: 600; color: #0f0c29; width: 35%; }
+.back-link { display: inline-block; margin: 20px 0 0 40px; color: #0095ff; font-weight: 600; font-size: 13px; }
+.contact-box { background: linear-gradient(135deg, #0f0c29, #302b63); border-radius: 14px; padding: 40px; color: #fff; text-align: center; }
+.contact-box h2 { font-size: 26px; }
+.contact-box p { color: rgba(255,255,255,0.6); margin: 10px 0 20px; }
+.contact-box .email { font-size: 20px; color: #00d4ff; font-weight: 700; }
+.contact-box .phone { margin-top: 8px; font-size: 15px; color: rgba(255,255,255,0.8); }
+.contact-form { max-width: 600px; margin: 30px auto; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+.contact-form textarea { height: 120px; }
+.contact-form button { width: 100%; padding: 14px; background: linear-gradient(135deg, #00d4ff, #0095ff); color: #fff; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; }
+footer { background: #0f0c29; color: rgba(255,255,255,0.4); text-align: center; padding: 24px; font-size: 12px; }
+@media (max-width: 800px) { .products-grid { grid-template-columns: 1fr 1fr; } .detail-body { flex-direction: column; } nav a { margin-left: 14px; font-size: 12px; } }
+</style></head>
+<body>
+<header>
+  <a class="logo" href="index.html">ONEMARK<span>.</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <span class="lang-switch"><select onchange="location.href=this.value">
+      <option value="index.html" selected>🇬🇧 English</option>
+      <option value="fr/index.html" >🇫🇷 Français</option>
+      <option value="es/index.html" >🇪🇸 Español</option>
+      <option value="zh/index.html" >🇨🇳 中文</option>
+    </select></span>
+  </nav>
+</header>
+<div class="section">
+  <div class="section-title">Our Products</div>
+  <div class="section-bar"></div>
+  <p class="section-sub">9 product lines | Custom sizes and features available</p>
+  <div class="products-grid"><div class="product-card">
+      <img src="images/pptx_080.jpeg" alt="Vertical Infrared Touch Signage">
+      <div class="product-info">
+        <h3>Vertical Infrared Touch Signage</h3>
+        <p>Floor-standing digital signage with 10-point infrared touch. Brushed aluminum frame, metal body, 3.5mm tempered glass.</p>
+        <div class="sizes">Available Sizes: 43"-85"</div>
+        <a class="more" href="vertical-ir.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_006.png" alt="Vertical Capacitive Touch Signage">
+      <div class="product-info">
+        <h3>Vertical Capacitive Touch Signage</h3>
+        <p>Elegant floor-standing kiosk with capacitive touch. Ideal for retail, hospitality, and interactive displays.</p>
+        <div class="sizes">Available Sizes: 32"-65"</div>
+        <a class="more" href="vertical-cap.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_011.png" alt="Wall-Mounted Infrared Touch Signage">
+      <div class="product-info">
+        <h3>Wall-Mounted Infrared Touch Signage</h3>
+        <p>Wall-mounted interactive display with infrared touch. Perfect for classrooms, training rooms, and retail.</p>
+        <div class="sizes">Available Sizes: 32"-85"</div>
+        <a class="more" href="wall-ir.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_020.png" alt="Wall-Mounted Capacitive Signage">
+      <div class="product-info">
+        <h3>Wall-Mounted Capacitive Signage</h3>
+        <p>Professional wall displays with brushed aluminum frame. Capacitive touch or non-touch, ultra-slim design.</p>
+        <div class="sizes">Available Sizes: 21.5"-75"</div>
+        <a class="more" href="wall-cap.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_045.png" alt="Interactive Whiteboard / Conference Display">
+      <div class="product-info">
+        <h3>Interactive Whiteboard / Conference Display</h3>
+        <p>All-in-one interactive whiteboards for education and meetings. 10-point touch, 4K UHD, built-in Android.</p>
+        <div class="sizes">Available Sizes: 65"-98"</div>
+        <a class="more" href="education.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_063.jpeg" alt="Self-Service Checkout Kiosk">
+      <div class="product-info">
+        <h3>Self-Service Checkout Kiosk</h3>
+        <p>Self-service kiosks with thermal printer and QR scanner. Optional camera, ID reader, and fingerprint scanner.</p>
+        <div class="sizes">Available Sizes: 21.5"-32"</div>
+        <a class="more" href="self-checkout.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_056.jpeg" alt="Video Wall Solutions">
+      <div class="product-info">
+        <h3>Video Wall Solutions</h3>
+        <p>Ultra-narrow bezel video walls for control rooms and large-format advertising. 0.88mm bezel available.</p>
+        <div class="sizes">Available Sizes: 46"-65"</div>
+        <a class="more" href="videowall.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_085.png" alt="Outdoor Waterproof Signage">
+      <div class="product-info">
+        <h3>Outdoor Waterproof Signage</h3>
+        <p>Outdoor-rated displays with high brightness and waterproof design for all weather conditions.</p>
+        <div class="sizes">Available Sizes: Custom</div>
+        <a class="more" href="outdoor.html">Back to Products →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_003.png" alt="Hologram & Transparent Display">
+      <div class="product-info">
+        <h3>Hologram & Transparent Display</h3>
+        <p>Cutting-edge hologram cabinets, transparent displays, and digital human solutions for premium experiences.</p>
+        <div class="sizes">Available Sizes: Custom</div>
+        <a class="more" href="hologram.html">Back to Products →</a>
+      </div>
+    </div></div>
+</div>
+<footer>© 2026 Shenzhen Onemark Electronics Co., Ltd. All rights reserved.</footer>
+</body></html>

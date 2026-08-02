@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONEMARK - Nuestros Productos</title>
+<meta name="description" content="9 líneas de productos | Tamaños y funciones personalizables">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif; color: #1a1a2e; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; }
+header { background: #0f0c29; padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { color: #fff; font-size: 22px; font-weight: 800; }
+.logo span { color: #00d4ff; }
+nav a { color: rgba(255,255,255,0.8); margin-left: 28px; font-size: 14px; }
+nav a:hover { color: #00d4ff; }
+.lang-switch { margin-left: 20px; }
+.lang-switch select { background: #1a1a2e; color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; border-radius: 6px; font-size: 13px; }
+.section { padding: 50px 40px; max-width: 1100px; margin: 0 auto; }
+.section-title { font-size: 30px; font-weight: 700; text-align: center; }
+.section-bar { width: 50px; height: 3px; background: #0095ff; margin: 12px auto 30px; }
+.section-sub { text-align: center; color: #666; margin-bottom: 35px; font-size: 14px; }
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.product-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.product-card img { width: 100%; height: 200px; object-fit: contain; background: #fafafa; }
+.product-info { padding: 16px; }
+.product-info h3 { font-size: 16px; font-weight: 600; }
+.product-info p { font-size: 12px; color: #666; margin-top: 6px; line-height: 1.6; height: 48px; overflow: hidden; }
+.product-info .sizes { font-size: 11px; color: #0095ff; margin-top: 6px; font-weight: 600; }
+.product-info .more { display: inline-block; margin-top: 10px; font-size: 12px; color: #0095ff; font-weight: 600; }
+.detail-hero { background: linear-gradient(135deg, #0f0c29, #302b63); color: #fff; padding: 40px; text-align: center; }
+.detail-hero h1 { font-size: 30px; }
+.detail-hero .sizes { color: #00d4ff; margin-top: 8px; font-size: 14px; }
+.detail-body { max-width: 1000px; margin: 0 auto; padding: 40px; display: flex; gap: 40px; }
+.detail-img { flex: 1; }
+.detail-img img { width: 100%; border-radius: 10px; border: 1px solid #eee; }
+.detail-info { flex: 1; }
+.detail-info p { font-size: 14px; line-height: 1.9; color: #444; }
+.spec-table { margin-top: 20px; width: 100%; border-collapse: collapse; font-size: 13px; }
+.spec-table td { padding: 10px; border-bottom: 1px solid #eee; }
+.spec-table td:first-child { font-weight: 600; color: #0f0c29; width: 35%; }
+.back-link { display: inline-block; margin: 20px 0 0 40px; color: #0095ff; font-weight: 600; font-size: 13px; }
+.contact-box { background: linear-gradient(135deg, #0f0c29, #302b63); border-radius: 14px; padding: 40px; color: #fff; text-align: center; }
+.contact-box h2 { font-size: 26px; }
+.contact-box p { color: rgba(255,255,255,0.6); margin: 10px 0 20px; }
+.contact-box .email { font-size: 20px; color: #00d4ff; font-weight: 700; }
+.contact-box .phone { margin-top: 8px; font-size: 15px; color: rgba(255,255,255,0.8); }
+.contact-form { max-width: 600px; margin: 30px auto; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+.contact-form textarea { height: 120px; }
+.contact-form button { width: 100%; padding: 14px; background: linear-gradient(135deg, #00d4ff, #0095ff); color: #fff; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; }
+footer { background: #0f0c29; color: rgba(255,255,255,0.4); text-align: center; padding: 24px; font-size: 12px; }
+@media (max-width: 800px) { .products-grid { grid-template-columns: 1fr 1fr; } .detail-body { flex-direction: column; } nav a { margin-left: 14px; font-size: 12px; } }
+</style></head>
+<body>
+<header>
+  <a class="logo" href="es/index.html">ONEMARK<span>.</span></a>
+  <nav>
+    <a href="es/index.html">Inicio</a>
+    <a href="es/products.html">Productos</a>
+    <a href="es/contact.html">Contacto</a>
+    <span class="lang-switch"><select onchange="location.href=this.value">
+      <option value="index.html" >🇬🇧 English</option>
+      <option value="fr/index.html" >🇫🇷 Français</option>
+      <option value="es/index.html" selected>🇪🇸 Español</option>
+      <option value="zh/index.html" >🇨🇳 中文</option>
+    </select></span>
+  </nav>
+</header>
+<div class="section">
+  <div class="section-title">Nuestros Productos</div>
+  <div class="section-bar"></div>
+  <p class="section-sub">9 líneas de productos | Tamaños y funciones personalizables</p>
+  <div class="products-grid"><div class="product-card">
+      <img src="../images/pptx_080.jpeg" alt="Señalización Táctil Infrarroja Vertical">
+      <div class="product-info">
+        <h3>Señalización Táctil Infrarroja Vertical</h3>
+        <p>Señalización digital de pie con pantalla táctil infrarroja de 10 puntos. Marco de aluminio cepillado, cuerpo metálico, vidrio templado de 3,5 mm.</p>
+        <div class="sizes">Tamaños Disponibles: 43"-85"</div>
+        <a class="more" href="vertical-ir.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_006.png" alt="Quiosco Táctil Capacitivo Vertical">
+      <div class="product-info">
+        <h3>Quiosco Táctil Capacitivo Vertical</h3>
+        <p>Elegante quiosco de pie con pantalla táctil capacitiva. Ideal para comercio minorista, hostelería y pantallas interactivas.</p>
+        <div class="sizes">Tamaños Disponibles: 32"-65"</div>
+        <a class="more" href="vertical-cap.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_011.png" alt="Pantalla Táctil Infrarroja de Pared">
+      <div class="product-info">
+        <h3>Pantalla Táctil Infrarroja de Pared</h3>
+        <p>Pantalla interactiva de pared con táctil infrarrojo. Perfecta para aulas, salas de formación y comercio.</p>
+        <div class="sizes">Tamaños Disponibles: 32"-85"</div>
+        <a class="more" href="wall-ir.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_020.png" alt="Pantalla Capacitiva de Pared">
+      <div class="product-info">
+        <h3>Pantalla Capacitiva de Pared</h3>
+        <p>Pantallas de pared profesionales con marco de aluminio cepillado. Táctil capacitivo o no táctil, diseño ultradelgado.</p>
+        <div class="sizes">Tamaños Disponibles: 21.5"-75"</div>
+        <a class="more" href="wall-cap.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_045.png" alt="Pizarra Interactiva / Pantalla de Conferencia">
+      <div class="product-info">
+        <h3>Pizarra Interactiva / Pantalla de Conferencia</h3>
+        <p>Pizarras interactivas todo-en-uno para educación y reuniones. Táctil de 10 puntos, 4K UHD, Android integrado.</p>
+        <div class="sizes">Tamaños Disponibles: 65"-98"</div>
+        <a class="more" href="education.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_063.jpeg" alt="Quiosco de Autopago">
+      <div class="product-info">
+        <h3>Quiosco de Autopago</h3>
+        <p>Quioscos de autoservicio con impresora térmica y escáner QR. Cámara, lector de identificación y huella opcionales.</p>
+        <div class="sizes">Tamaños Disponibles: 21.5"-32"</div>
+        <a class="more" href="self-checkout.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_056.jpeg" alt="Soluciones de Videowall">
+      <div class="product-info">
+        <h3>Soluciones de Videowall</h3>
+        <p>Videowalls de marco ultrafino para salas de control y publicidad de gran formato. Marco de 0,88 mm disponible.</p>
+        <div class="sizes">Tamaños Disponibles: 46"-65"</div>
+        <a class="more" href="videowall.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_085.png" alt="Señalización Exterior Impermeable">
+      <div class="product-info">
+        <h3>Señalización Exterior Impermeable</h3>
+        <p>Pantallas exteriores de alta luminosidad y diseño impermeable para todas las condiciones climáticas.</p>
+        <div class="sizes">Tamaños Disponibles: Custom</div>
+        <a class="more" href="outdoor.html">Volver a Productos →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="../images/pptx_003.png" alt="Pantalla Holográfica y Transparente">
+      <div class="product-info">
+        <h3>Pantalla Holográfica y Transparente</h3>
+        <p>Cabinas holográficas, pantallas transparentes y soluciones digitales de vanguardia para experiencias premium.</p>
+        <div class="sizes">Tamaños Disponibles: Custom</div>
+        <a class="more" href="hologram.html">Volver a Productos →</a>
+      </div>
+    </div></div>
+</div>
+<footer>© 2026 Shenzhen Onemark Electronics Co., Ltd. Todos los derechos reservados.</footer>
+</body></html>

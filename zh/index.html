@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONEMARK - ONEMARK 商业显示解决方案</title>
+<meta name="description" content="自2005年您值得信赖的OEM/ODM合作伙伴 | 数字标牌 · 触摸显示 · 自助终端 · 拼接屏">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif; color: #1a1a2e; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; }
+
+/* Header */
+header { background: #0f0c29; padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { color: #fff; font-size: 22px; font-weight: 800; }
+.logo span { color: #00d4ff; }
+nav a { color: rgba(255,255,255,0.8); margin-left: 28px; font-size: 14px; }
+nav a:hover { color: #00d4ff; }
+.lang-switch { margin-left: 20px; }
+.lang-switch select { background: #1a1a2e; color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); color: #fff; text-align: center; padding: 90px 30px; }
+.hero h1 { font-size: 44px; font-weight: 800; }
+.hero h1 span { color: #00d4ff; }
+.hero p { margin-top: 16px; font-size: 17px; color: rgba(255,255,255,0.7); max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+.hero .btn { display: inline-block; margin-top: 30px; background: linear-gradient(135deg, #00d4ff, #0095ff); color: #fff; padding: 14px 40px; border-radius: 50px; font-weight: 600; }
+.hero .stats { display: flex; justify-content: center; gap: 50px; margin-top: 50px; }
+.stat-num { font-size: 30px; font-weight: 700; color: #00d4ff; }
+.stat-label { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 4px; }
+
+/* Sections */
+.section { padding: 60px 40px; max-width: 1100px; margin: 0 auto; }
+.section-title { font-size: 30px; font-weight: 700; text-align: center; }
+.section-bar { width: 50px; height: 3px; background: #0095ff; margin: 12px auto 30px; }
+.section-sub { text-align: center; color: #666; margin-bottom: 35px; font-size: 14px; }
+
+/* About */
+.about-grid { display: flex; gap: 40px; }
+.about-text p { font-size: 14px; line-height: 1.9; color: #444; margin-bottom: 12px; }
+
+/* Products */
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.product-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.product-card img { width: 100%; height: 200px; object-fit: contain; background: #fafafa; }
+.product-info { padding: 16px; }
+.product-info h3 { font-size: 16px; font-weight: 600; }
+.product-info p { font-size: 12px; color: #666; margin-top: 6px; line-height: 1.6; height: 48px; overflow: hidden; }
+.product-info .sizes { font-size: 11px; color: #0095ff; margin-top: 6px; font-weight: 600; }
+.product-info .more { display: inline-block; margin-top: 10px; font-size: 12px; color: #0095ff; font-weight: 600; }
+
+/* Why */
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.why-item { border: 1px solid #eee; border-radius: 10px; padding: 22px; text-align: center; }
+.why-item .ic { font-size: 30px; }
+.why-item h4 { font-size: 14px; margin-top: 8px; }
+.why-item p { font-size: 12px; color: #666; margin-top: 6px; }
+
+/* Contact */
+.contact-box { background: linear-gradient(135deg, #0f0c29, #302b63); border-radius: 14px; padding: 40px; color: #fff; text-align: center; }
+.contact-box h2 { font-size: 26px; }
+.contact-box p { color: rgba(255,255,255,0.6); margin: 10px 0 20px; }
+.contact-box .email { font-size: 20px; color: #00d4ff; font-weight: 700; }
+.contact-box .phone { margin-top: 8px; font-size: 15px; color: rgba(255,255,255,0.8); }
+.contact-info-row { display: flex; justify-content: center; gap: 40px; margin-top: 20px; flex-wrap: wrap; }
+
+footer { background: #0f0c29; color: rgba(255,255,255,0.4); text-align: center; padding: 24px; font-size: 12px; }
+
+/* Product detail */
+.detail-hero { background: linear-gradient(135deg, #0f0c29, #302b63); color: #fff; padding: 50px 40px; text-align: center; }
+.detail-hero h1 { font-size: 34px; }
+.detail-body { max-width: 1000px; margin: 0 auto; padding: 40px; display: flex; gap: 40px; }
+.detail-img { flex: 1; }
+.detail-img img { width: 100%; border-radius: 10px; border: 1px solid #eee; }
+.detail-info { flex: 1; }
+.detail-info p { font-size: 14px; line-height: 1.9; color: #444; }
+.spec-table { margin-top: 20px; width: 100%; border-collapse: collapse; font-size: 13px; }
+.spec-table td { padding: 10px; border-bottom: 1px solid #eee; }
+.spec-table td:first-child { font-weight: 600; color: #0f0c29; width: 35%; }
+
+@media (max-width: 800px) {
+  .products-grid, .why-grid { grid-template-columns: 1fr 1fr; }
+  .detail-body { flex-direction: column; }
+  nav a { margin-left: 14px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ONEMARK<span>.</span></a>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="products.html">产品中心</a>
+    <a href="contact.html">联系我们</a>
+    <span class="lang-switch"><select onchange="location.href=this.value">
+      <option value="index.html" >🇬🇧 English</option><option value="fr/index.html" >🇫🇷 Français</option><option value="es/index.html" >🇪🇸 Español</option><option value="zh/index.html" selected>🇨🇳 中文</option>
+    </select></span>
+  </nav>
+</header>
+<div class="hero">
+  <h1>ONEMARK <span>商业显示</span></h1>
+  <p>自2005年您值得信赖的OEM/ODM合作伙伴 | 数字标牌 · 触摸显示 · 自助终端 · 拼接屏</p>
+  <a class="btn" href="products.html">查看产品</a>
+  <div class="stats"><div><div class="stat-num">19+</div><div class="stat-label">年行业经验</div></div><div><div class="stat-num">20+</div><div class="stat-label">出口国家</div></div><div><div class="stat-num">3000㎡</div><div class="stat-label">工厂面积</div></div><div><div class="stat-num">4</div><div class="stat-label">大产品系列</div></div></div>
+</div>
+<div class="section" id="about">
+  <div class="section-title">关于万马</div>
+  <div class="section-bar"></div>
+  <div class="about-grid">
+    <div class="about-text"><p>万马电子创立于2005年，坐落于中国深圳，是一家集研发、生产、营销于一体的高科技企业，专注于商业显示解决方案。</p><p>拥有3000㎡工厂、50多名专业人员、19年以上行业经验，产品远销20多个国家，提供全面的OEM/ODM定制服务。</p></div>
+  </div>
+</div>
+<div class="section" id="products" style="background:#f8f9fb;">
+  <div class="section-title">产品中心</div>
+  <div class="section-bar"></div>
+  <p class="section-sub">9条产品线，覆盖数字标牌、触摸显示、自助终端和拼接屏</p>
+  <div class="products-grid"><div class="product-card">
+      <img src="images/pptx_080.jpeg" alt="立式红外触摸广告机">
+      <div class="product-info">
+        <h3>立式红外触摸广告机</h3>
+        <p>落地式数字标牌，10点红外触摸。拉丝铝框，金属机身，3.5mm钢化玻璃。</p>
+        <div class="sizes">43"-85"</div>
+        <a class="more" href="products.html">查看详情 →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_006.png" alt="立式电容触摸广告机">
+      <div class="product-info">
+        <h3>立式电容触摸广告机</h3>
+        <p>优雅落地式电容触摸终端，适用于零售、酒店和互动展示。</p>
+        <div class="sizes">32"-65"</div>
+        <a class="more" href="products.html">查看详情 →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_011.png" alt="壁挂红外触摸广告机">
+      <div class="product-info">
+        <h3>壁挂红外触摸广告机</h3>
+        <p>壁挂式红外触摸交互屏，适用于教室、培训室和零售场景。</p>
+        <div class="sizes">32"-85"</div>
+        <a class="more" href="products.html">查看详情 →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_020.png" alt="壁挂电容触摸广告机">
+      <div class="product-info">
+        <h3>壁挂电容触摸广告机</h3>
+        <p>专业壁挂屏，拉丝铝框，超薄设计，可选电容触摸。</p>
+        <div class="sizes">21.5"-75"</div>
+        <a class="more" href="products.html">查看详情 →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_045.png" alt="教学会议一体机">
+      <div class="product-info">
+        <h3>教学会议一体机</h3>
+        <p>教学会议一体机，10点触控，4K超高清，内置安卓系统。</p>
+        <div class="sizes">65"-98"</div>
+        <a class="more" href="products.html">查看详情 →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_063.jpeg" alt="自助结算一体机">
+      <div class="product-info">
+        <h3>自助结算一体机</h3>
+        <p>自助结算终端，内置热敏打印机和扫码器，可选摄像头、读卡器等外设。</p>
+        <div class="sizes">21.5"-32"</div>
+        <a class="more" href="products.html">查看详情 →</a>
+      </div>
+    </div></div>
+</div>
+<div class="section" id="why">
+  <div class="section-title">为什么选择万马</div>
+  <div class="section-bar"></div>
+  <div class="why-grid"><div class="why-item"><div class="ic">🏭</div><h4>制造实力</h4><p>3000㎡工厂，严格质检</p></div><div class="why-item"><div class="ic">🎨</div><h4>全面定制</h4><p>尺寸、颜色、LOGO、功能按需定制</p></div><div class="why-item"><div class="ic">🌍</div><h4>全球出口</h4><p>远销20多个国家</p></div><div class="why-item"><div class="ic">🛡️</div><h4>品质认证</h4><p>CE、FCC、RoHS认证</p></div><div class="why-item"><div class="ic">📞</div><h4>贴心服务</h4><p>响应迅速，技术文档齐全</p></div><div class="why-item"><div class="ic">⚡</div><h4>快速交付</h4><p>样品15天，批量30天</p></div></div>
+</div>
+<div class="section" id="contact">
+  <div class="contact-box">
+    <h2>联系我们</h2>
+    <p>准备好开始您的项目了吗？我们通常在24小时内回复。</p>
+    <div class="email">📧 onemark@foxmail.com</div>
+    <div class="phone">📞 +86 181 9408 6045</div>
+    <div class="contact-info-row">
+      <div>📍 深圳市龙华新区福城街道章阁社区宝观科技园A栋3楼</div>
+    </div>
+  </div>
+</div>
+<footer>© 2026 深圳市万马电子科技有限公司 版权所有</footer>
+</body>
+</html>

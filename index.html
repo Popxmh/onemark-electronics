@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONEMARK - ONEMARK Commercial Display Solutions</title>
+<meta name="description" content="Your Trusted OEM/ODM Partner Since 2005 | Digital Signage · Touch Displays · Kiosks · Video Walls">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif; color: #1a1a2e; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; }
+
+/* Header */
+header { background: #0f0c29; padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { color: #fff; font-size: 22px; font-weight: 800; }
+.logo span { color: #00d4ff; }
+nav a { color: rgba(255,255,255,0.8); margin-left: 28px; font-size: 14px; }
+nav a:hover { color: #00d4ff; }
+.lang-switch { margin-left: 20px; }
+.lang-switch select { background: #1a1a2e; color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); color: #fff; text-align: center; padding: 90px 30px; }
+.hero h1 { font-size: 44px; font-weight: 800; }
+.hero h1 span { color: #00d4ff; }
+.hero p { margin-top: 16px; font-size: 17px; color: rgba(255,255,255,0.7); max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+.hero .btn { display: inline-block; margin-top: 30px; background: linear-gradient(135deg, #00d4ff, #0095ff); color: #fff; padding: 14px 40px; border-radius: 50px; font-weight: 600; }
+.hero .stats { display: flex; justify-content: center; gap: 50px; margin-top: 50px; }
+.stat-num { font-size: 30px; font-weight: 700; color: #00d4ff; }
+.stat-label { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 4px; }
+
+/* Sections */
+.section { padding: 60px 40px; max-width: 1100px; margin: 0 auto; }
+.section-title { font-size: 30px; font-weight: 700; text-align: center; }
+.section-bar { width: 50px; height: 3px; background: #0095ff; margin: 12px auto 30px; }
+.section-sub { text-align: center; color: #666; margin-bottom: 35px; font-size: 14px; }
+
+/* About */
+.about-grid { display: flex; gap: 40px; }
+.about-text p { font-size: 14px; line-height: 1.9; color: #444; margin-bottom: 12px; }
+
+/* Products */
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.product-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.product-card img { width: 100%; height: 200px; object-fit: contain; background: #fafafa; }
+.product-info { padding: 16px; }
+.product-info h3 { font-size: 16px; font-weight: 600; }
+.product-info p { font-size: 12px; color: #666; margin-top: 6px; line-height: 1.6; height: 48px; overflow: hidden; }
+.product-info .sizes { font-size: 11px; color: #0095ff; margin-top: 6px; font-weight: 600; }
+.product-info .more { display: inline-block; margin-top: 10px; font-size: 12px; color: #0095ff; font-weight: 600; }
+
+/* Why */
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.why-item { border: 1px solid #eee; border-radius: 10px; padding: 22px; text-align: center; }
+.why-item .ic { font-size: 30px; }
+.why-item h4 { font-size: 14px; margin-top: 8px; }
+.why-item p { font-size: 12px; color: #666; margin-top: 6px; }
+
+/* Contact */
+.contact-box { background: linear-gradient(135deg, #0f0c29, #302b63); border-radius: 14px; padding: 40px; color: #fff; text-align: center; }
+.contact-box h2 { font-size: 26px; }
+.contact-box p { color: rgba(255,255,255,0.6); margin: 10px 0 20px; }
+.contact-box .email { font-size: 20px; color: #00d4ff; font-weight: 700; }
+.contact-box .phone { margin-top: 8px; font-size: 15px; color: rgba(255,255,255,0.8); }
+.contact-info-row { display: flex; justify-content: center; gap: 40px; margin-top: 20px; flex-wrap: wrap; }
+
+footer { background: #0f0c29; color: rgba(255,255,255,0.4); text-align: center; padding: 24px; font-size: 12px; }
+
+/* Product detail */
+.detail-hero { background: linear-gradient(135deg, #0f0c29, #302b63); color: #fff; padding: 50px 40px; text-align: center; }
+.detail-hero h1 { font-size: 34px; }
+.detail-body { max-width: 1000px; margin: 0 auto; padding: 40px; display: flex; gap: 40px; }
+.detail-img { flex: 1; }
+.detail-img img { width: 100%; border-radius: 10px; border: 1px solid #eee; }
+.detail-info { flex: 1; }
+.detail-info p { font-size: 14px; line-height: 1.9; color: #444; }
+.spec-table { margin-top: 20px; width: 100%; border-collapse: collapse; font-size: 13px; }
+.spec-table td { padding: 10px; border-bottom: 1px solid #eee; }
+.spec-table td:first-child { font-weight: 600; color: #0f0c29; width: 35%; }
+
+@media (max-width: 800px) {
+  .products-grid, .why-grid { grid-template-columns: 1fr 1fr; }
+  .detail-body { flex-direction: column; }
+  nav a { margin-left: 14px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ONEMARK<span>.</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <span class="lang-switch"><select onchange="location.href=this.value">
+      <option value="index.html" selected>🇬🇧 English</option><option value="fr/index.html" >🇫🇷 Français</option><option value="es/index.html" >🇪🇸 Español</option><option value="zh/index.html" >🇨🇳 中文</option>
+    </select></span>
+  </nav>
+</header>
+<div class="hero">
+  <h1>ONEMARK <span>Commercial Display</span></h1>
+  <p>Your Trusted OEM/ODM Partner Since 2005 | Digital Signage · Touch Displays · Kiosks · Video Walls</p>
+  <a class="btn" href="products.html">View Products</a>
+  <div class="stats"><div><div class="stat-num">19+</div><div class="stat-label">Years Experience</div></div><div><div class="stat-num">20+</div><div class="stat-label">Export Countries</div></div><div><div class="stat-num">3000m²</div><div class="stat-label">Factory Area</div></div><div><div class="stat-num">4</div><div class="stat-label">Product Series</div></div></div>
+</div>
+<div class="section" id="about">
+  <div class="section-title">About Onemark</div>
+  <div class="section-bar"></div>
+  <div class="about-grid">
+    <div class="about-text"><p>Founded in 2005 in Shenzhen, China, Onemark is a high-tech enterprise integrating R&D, manufacturing, and sales. We specialize in commercial display solutions.</p><p>With a 3000m² factory, 50+ professionals, and 19+ years of experience, we export to 20+ countries and offer full OEM/ODM customization.</p></div>
+  </div>
+</div>
+<div class="section" id="products" style="background:#f8f9fb;">
+  <div class="section-title">Our Products</div>
+  <div class="section-bar"></div>
+  <p class="section-sub">9 product lines covering digital signage, touch displays, kiosks, and video walls</p>
+  <div class="products-grid"><div class="product-card">
+      <img src="images/pptx_080.jpeg" alt="Vertical Infrared Touch Signage">
+      <div class="product-info">
+        <h3>Vertical Infrared Touch Signage</h3>
+        <p>Floor-standing digital signage with 10-point infrared touch. Brushed aluminum frame, metal body, 3.5mm tempered glass.</p>
+        <div class="sizes">43"-85"</div>
+        <a class="more" href="products.html">View Details →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_006.png" alt="Vertical Capacitive Touch Signage">
+      <div class="product-info">
+        <h3>Vertical Capacitive Touch Signage</h3>
+        <p>Elegant floor-standing kiosk with capacitive touch. Ideal for retail, hospitality, and interactive displays.</p>
+        <div class="sizes">32"-65"</div>
+        <a class="more" href="products.html">View Details →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_011.png" alt="Wall-Mounted Infrared Touch Signage">
+      <div class="product-info">
+        <h3>Wall-Mounted Infrared Touch Signage</h3>
+        <p>Wall-mounted interactive display with infrared touch. Perfect for classrooms, training rooms, and retail.</p>
+        <div class="sizes">32"-85"</div>
+        <a class="more" href="products.html">View Details →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_020.png" alt="Wall-Mounted Capacitive Signage">
+      <div class="product-info">
+        <h3>Wall-Mounted Capacitive Signage</h3>
+        <p>Professional wall displays with brushed aluminum frame. Capacitive touch or non-touch, ultra-slim design.</p>
+        <div class="sizes">21.5"-75"</div>
+        <a class="more" href="products.html">View Details →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_045.png" alt="Interactive Whiteboard / Conference Display">
+      <div class="product-info">
+        <h3>Interactive Whiteboard / Conference Display</h3>
+        <p>All-in-one interactive whiteboards for education and meetings. 10-point touch, 4K UHD, built-in Android.</p>
+        <div class="sizes">65"-98"</div>
+        <a class="more" href="products.html">View Details →</a>
+      </div>
+    </div><div class="product-card">
+      <img src="images/pptx_063.jpeg" alt="Self-Service Checkout Kiosk">
+      <div class="product-info">
+        <h3>Self-Service Checkout Kiosk</h3>
+        <p>Self-service kiosks with thermal printer and QR scanner. Optional camera, ID reader, and fingerprint scanner.</p>
+        <div class="sizes">21.5"-32"</div>
+        <a class="more" href="products.html">View Details →</a>
+      </div>
+    </div></div>
+</div>
+<div class="section" id="why">
+  <div class="section-title">Why Choose Onemark</div>
+  <div class="section-bar"></div>
+  <div class="why-grid"><div class="why-item"><div class="ic">🏭</div><h4>Manufacturing Excellence</h4><p>3000m² facility with strict QC</p></div><div class="why-item"><div class="ic">🎨</div><h4>Full Customization</h4><p>Size, color, logo, features tailored to you</p></div><div class="why-item"><div class="ic">🌍</div><h4>Global Export</h4><p>Shipped to 20+ countries</p></div><div class="why-item"><div class="ic">🛡️</div><h4>Certified</h4><p>CE, FCC, RoHS certified</p></div><div class="why-item"><div class="ic">📞</div><h4>Dedicated Support</h4><p>Responsive team, technical docs</p></div><div class="why-item"><div class="ic">⚡</div><h4>Fast Turnaround</h4><p>Samples in 15 days</p></div></div>
+</div>
+<div class="section" id="contact">
+  <div class="contact-box">
+    <h2>Contact Us</h2>
+    <p>Ready to start your project? We typically reply within 24 hours.</p>
+    <div class="email">📧 onemark@foxmail.com</div>
+    <div class="phone">📞 +86 181 9408 6045</div>
+    <div class="contact-info-row">
+      <div>📍 Building A, 3F, Baoguan Science & Technology Park, Fucheng Street, Longhua District, Shenzhen, China</div>
+    </div>
+  </div>
+</div>
+<footer>© 2026 Shenzhen Onemark Electronics Co., Ltd. All rights reserved.</footer>
+</body>
+</html>
