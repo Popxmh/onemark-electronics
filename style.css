@@ -136,4 +136,10 @@ footer{background:#0078b8;color:rgba(255,255,255,.8);padding:30px 24px;border-to
 .cta-banner .btn:hover{background:#fcb800;box-shadow:0 4px 20px rgba(252,196,0,.35)}
 
 @media(max-width:900px){.story-inner{grid-template-columns:1fr}.why-grid{grid-template-columns:repeat(2,1fr)}.story-img{order:-1}}
+
+/* Product info specs */
+.prod-info{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;padding:16px;background:#f8f8f8;border-radius:6px}
+.prod-specs h4{font-size:13px;font-weight:700;color:#0078b8;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px}
+.prod-specs span{font-size:13px;color:#555;line-height:1.7;display:block}
+@media(max-width:900px){.prod-info{grid-template-columns:1fr}}
 @media(max-width:900px){.cg2{grid-template-columns:repeat(2,1fr)}.pg2{grid-template-columns:repeat(2,1fr)}.env2{grid-template-columns:repeat(2,1fr)}.hero3 h1{font-size:36px}.about2,.about-sec-inner{grid-template-columns:1fr}.cbox{grid-template-columns:1fr}}
