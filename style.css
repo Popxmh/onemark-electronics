@@ -37,9 +37,11 @@ nav{display:flex;gap:24px}nav a{font-size:14px;color:#555;font-weight:500;transi
 .cc2:last-child{border-color:#acd414;background:linear-gradient(180deg,#fcfdf7 0%,#fff 30%)}
 .cc2:last-child:hover{border-color:#a8d018;box-shadow:0 8px 30px rgba(172,212,20,.15)}
 
-/* Data Strip - 蓝色渐变 + 金色点缀 */
-.strip{background:linear-gradient(90deg,#0078b8,#0080c8,#0078b8);color:rgba(255,255,255,.95);text-align:center;padding:40px 24px;font-size:16px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;border-top:3px solid #fcc400}
-.strip span{display:inline-block;width:2px;height:18px;background:rgba(255,255,255,.25);vertical-align:middle}
+/* Data Strip */
+.strip{background:linear-gradient(90deg,#0078b8,#0080c8,#0078b8);color:#fff;text-align:center;padding:40px 24px;display:flex;gap:36px;justify-content:center;align-items:center;flex-wrap:wrap;border-top:3px solid #fcc400}
+.stat-item{text-align:center;min-width:120px}
+.stat-item strong{display:block;font-size:32px;font-weight:800;color:#fcc400;line-height:1.2}
+.stat-item{font-size:14px;color:rgba(255,255,255,.8)}
 
 /* Products detail page */
 .ps2{margin-bottom:48px}.ps2 h3{font-size:22px;font-weight:800;color:#0078b8;margin-bottom:8px;padding-bottom:8px;border-bottom:2px solid #80c0e0}
