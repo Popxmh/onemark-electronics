@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.onemark-electronics.com/sitemap.xml
