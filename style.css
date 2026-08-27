@@ -44,6 +44,7 @@ nav a:hover{color:#0080c8;border-bottom-color:#fcc400}
 /* ===== 通用内容区 ===== */
 .content-section{max-width:1200px;margin:0 auto;padding:60px 24px}
 .content-section h2{font-size:28px;font-weight:800;color:#0078b8;margin-bottom:24px}
+.policy-copy{max-width:900px}.policy-copy p{font-size:15px;color:#52636d;line-height:1.85;margin-bottom:22px}.policy-copy h2{font-size:24px;margin:34px 0 10px}.policy-copy h2:first-of-type{margin-top:32px}.policy-copy a{color:#0078b8;text-decoration:underline}
 
 /* ===== 首页-产品分类卡片 ===== */
 .sec2{max-width:1200px;margin:0 auto;padding:70px 24px}

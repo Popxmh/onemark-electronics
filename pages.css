@@ -1,0 +1,61 @@
+.page-main{background:#fff;color:#173b50}
+.page-hero-clean{padding:150px 28px 95px;background:linear-gradient(125deg,#071d2b,#0c4867);color:#fff}
+.page-hero-inner,.page-section-inner{max-width:1240px;margin:auto}
+.page-hero-clean h1{max-width:920px;margin:12px 0 20px;font-size:clamp(44px,6vw,78px);font-weight:620;line-height:1;letter-spacing:-3px}
+.page-hero-clean>div>p:last-child{max-width:720px;font-size:18px;line-height:1.7;color:rgba(255,255,255,.75)}
+.page-section{padding:100px 28px}
+.page-section.alt{background:#f3f8fa}
+.section-heading{display:grid;grid-template-columns:.65fr 1.35fr;gap:70px;align-items:start;margin-bottom:45px}
+.section-heading h2{font-size:clamp(36px,4.2vw,56px);font-weight:620;line-height:1.05;letter-spacing:-2.4px;color:#0b2637}
+.section-heading p:last-child{font-size:16px;line-height:1.75;color:#60717a}
+.catalog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.catalog-card{display:grid;grid-template-columns:.82fr 1.18fr;min-height:350px;border:1px solid #d8e5eb;border-radius:18px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+.catalog-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(8,44,65,.1)}
+.catalog-card-media{display:flex;align-items:center;justify-content:center;padding:28px;background:linear-gradient(145deg,#f8fbfc,#e5eef2)}
+.catalog-card-media img{width:100%;height:260px;object-fit:contain}
+.catalog-card-copy{padding:30px}
+.catalog-card-copy span,.detail-kicker{font-size:10px;font-weight:800;letter-spacing:1.05px;color:#0080c8}
+.catalog-card-copy h2{margin:18px 0 12px;font-size:25px;color:#173b50}
+.catalog-card-copy p{font-size:14px;line-height:1.75;color:#60717a}
+.catalog-link{display:inline-block;margin-top:22px;font-size:13px;font-weight:800;color:#0078b8;border-bottom:2px solid #fcc400;padding-bottom:3px}
+.detail-hero{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.detail-copy h1{margin:14px 0 20px;font-size:clamp(43px,5.4vw,72px);font-weight:620;line-height:1;letter-spacing:-3px;color:#0b2637}
+.detail-copy>p{font-size:17px;line-height:1.8;color:#5b6e78}
+.detail-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.detail-actions a{padding:13px 19px;border-radius:999px;font-size:13px;font-weight:800}
+.detail-actions .primary{background:#0a2537;color:#fff}
+.detail-actions .secondary{border:1px solid #a8c4d0;color:#173b50}
+.detail-media{min-height:530px;display:flex;align-items:center;justify-content:center;padding:48px;border-radius:22px;background:linear-gradient(145deg,#f8fbfc,#e5eef2)}
+.detail-media img{width:100%;max-height:460px;object-fit:contain}
+.config-grid,.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.config-card,.process-card{padding:27px;border:1px solid #d9e6ec;border-radius:14px;background:#fff}
+.config-card b,.process-card b{display:block;margin-bottom:16px;color:#0080c8;font-size:12px}
+.config-card h3,.process-card h3{font-size:19px;color:#173b50;margin-bottom:9px}
+.config-card p,.process-card p{font-size:13px;line-height:1.7;color:#62737c}
+.product-note{margin-top:24px;padding:18px 20px;border-left:3px solid #0080c8;background:#edf7fb;font-size:13px;line-height:1.7;color:#526974}
+.factory-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.factory-gallery figure{margin:0;overflow:hidden;border-radius:12px;background:#dce9ee}
+.factory-gallery img{display:block;width:100%;height:250px;object-fit:cover}
+.factory-gallery figcaption{padding:10px 13px;font-size:11px;color:#526974;background:#fff}
+.proof-callout{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;padding:42px;border-radius:20px;background:#0a1f2d;color:#fff}
+.proof-callout h2{font-size:clamp(32px,3.8vw,50px);line-height:1.05;letter-spacing:-2px}
+.proof-callout p{font-size:15px;line-height:1.8;color:rgba(255,255,255,.72)}
+.contact-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:50px}
+.project-form{padding:34px;border:1px solid #d8e6ec;border-radius:18px;background:#fff}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.project-form label{display:block;font-size:12px;font-weight:750;color:#385461}
+.project-form input,.project-form select,.project-form textarea{width:100%;margin-top:7px;padding:13px;border:1px solid #bfd1d9;border-radius:8px;background:#fff;color:#173b50;font:inherit}
+.project-form textarea{min-height:120px;resize:vertical}
+.project-form .full{grid-column:1 / -1}
+.project-form button{margin-top:20px;padding:14px 21px;border:0;border-radius:999px;background:#0a2537;color:#fff;font-weight:800;cursor:pointer}
+.form-note,.form-status{margin-top:13px;font-size:12px;line-height:1.6;color:#6b7e87}
+.form-status{color:#006f9f;font-weight:700}
+.contact-panel{padding:34px;border-radius:18px;background:#0a1f2d;color:#fff;align-self:start}
+.contact-panel h2{font-size:31px;margin-bottom:13px}
+.contact-panel p{font-size:14px;line-height:1.75;color:rgba(255,255,255,.72)}
+.contact-panel a{display:block;margin-top:15px;padding:14px;border:1px solid rgba(255,255,255,.18);border-radius:9px;background:rgba(255,255,255,.07);font-size:13px;font-weight:800}
+.contact-panel small{display:block;margin-top:4px;color:#9bd9ee;font-weight:500}
+.whatsapp-float{position:fixed;z-index:40;right:22px;bottom:22px;padding:13px 17px;border-radius:999px;background:#16a56a;color:#fff;font-size:13px;font-weight:800;box-shadow:0 14px 36px rgba(0,0,0,.22)}
+.whatsapp-float:hover{background:#118657}
+@media(max-width:980px){.catalog-grid,.detail-hero,.contact-layout,.proof-callout{grid-template-columns:1fr}.catalog-card{grid-template-columns:.7fr 1.3fr}.config-grid,.process-grid{grid-template-columns:1fr 1fr}.factory-gallery{grid-template-columns:1fr 1fr}.section-heading{grid-template-columns:1fr;gap:18px}.detail-media{min-height:420px}}
+@media(max-width:620px){.page-hero-clean{padding:115px 22px 72px}.page-section{padding:76px 20px}.catalog-grid,.catalog-card,.form-grid{grid-template-columns:1fr}.catalog-card-media img{height:230px}.catalog-card .catalog-card-copy{padding:25px}.detail-media{min-height:350px;padding:25px}.config-grid,.process-grid,.factory-gallery{grid-template-columns:1fr}.project-form,.contact-panel{padding:24px}.project-form .full{grid-column:auto}.whatsapp-float{right:14px;bottom:14px}}
